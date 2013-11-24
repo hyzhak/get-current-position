@@ -25,7 +25,10 @@ class MainHandler(webapp2.RequestHandler):
             'coords': {
                 'latitude': safe_list_get(location, 0, 0),
                 'longitude': safe_list_get(location, 1, 0)
-            }
+            },
+            'sources': 'https://github.com/hyzhak/get-current-position',
+            'author': 'https://github.com/hyzhak',
+            'licence': 'MIT'
         }))
 
 
